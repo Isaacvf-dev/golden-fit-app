@@ -25,9 +25,9 @@ export default function ExerciseCard({ exercise, index }) {
       </div>
 
       <div className="flex flex-col bg-slate-950 rounded gap-2">
-        {exercise.description.split('___').map(item => {
+        {exercise.description.split('___').map((item, index) => {
           return (
-            <div className="text-sm">
+            <div key={index} className="text-sm">
               {item}
             </div>
           )

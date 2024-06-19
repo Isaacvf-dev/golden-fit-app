@@ -2,8 +2,7 @@ import ExerciseCard from "./ExerciseCard"
 import SectionWrapper from "./SectionWrapper"
 export default function Workout({ workout }) {
   return (
-    <SectionWrapper
-      id='workout'
+    <SectionWrapper      
       header={"Welcome to"}
       title={["The", "Golden", "area"]}
     >

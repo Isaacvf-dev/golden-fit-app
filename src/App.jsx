@@ -33,6 +33,8 @@ function App() {
         setGoal={setGoal}
         updateWorkout={updateWorkout}
       />
+      <div id={'workout'} className="bg-inherit">
+      </div>
       {workout && <Workout workout={workout} />}
     </main>
   );
