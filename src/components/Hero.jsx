@@ -12,12 +12,19 @@ export default function Hero() {
 
       <p className="text-sm md:text-base font-light">
         Ready to turn those &quot;maybe laters&quot; into &quot;today&apos;s
-        gains&quot;? It&apos;s time to <span className="text-amber-400 font-medium">level up</span> your fitness game
-        and crush those goals you didn&apos;t even know you had. <br/>Let the{" "}
-        <span className="text-amber-400 font-medium">gains</span> begin!
+        gains&quot;? It&apos;s time to{" "}
+        <span className="text-amber-400 font-medium">level up</span> your
+        fitness game and crush those goals you didn&apos;t even know you had.{" "}
+        <br />
+        Let the <span className="text-amber-400 font-medium">gains</span> begin!
       </p>
 
-      <Button text='Accept & Begin'/>
+      <Button
+        callFunction={() => {
+          window.location.href = "#generate";
+        }}
+        text="Accept & Begin"
+      />
     </div>
   );
 }

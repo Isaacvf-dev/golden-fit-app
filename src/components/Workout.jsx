@@ -3,7 +3,8 @@ import SectionWrapper from "./SectionWrapper"
 export default function Workout({ workout }) {
   return (
     <SectionWrapper
-      header={"Welcome to the golden area"}
+      id='workout'
+      header={"Welcome to"}
       title={["The", "Golden", "area"]}
     >
       <div className="flex flex-col gap-4">
