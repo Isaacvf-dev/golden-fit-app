@@ -71,7 +71,7 @@ export default function Generator({
       <Header
         index={"01"}
         title={"Choose your style"}
-        description={"Select the muscles to be killed."}
+        description={"Select the workout."}
       />
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {Object.keys(WORKOUTS).map((type, typeIndex) => {
