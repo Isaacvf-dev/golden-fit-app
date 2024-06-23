@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ExerciseCard({ exercise, index }) {
   const [setsCompleted, setSetsCompleted] = useState(0);
 
+  useEffect(() => {
+    setSetsCompleted(0)
+  },[exercise])
+
   function handleSetIncrement() {
     setSetsCompleted((setsCompleted + 1) % 6)
   }
+  
 
   return (
     <div className="flex flex-col gap-4 sm:flex-wrap p-4 rounded-md bg-slate-950">
@@ -25,9 +30,9 @@ export default function ExerciseCard({ exercise, index }) {
       </div>
 
       <div className="flex flex-col bg-slate-950 rounded gap-2">
-        {exercise.description.split('___').map((item, index) => {
+        {exercise.description.split('___').map((item) => {
           return (
-            <div key={index} className="text-sm">
+            <div key={item} className="text-sm">
               {item}
             </div>
           )
